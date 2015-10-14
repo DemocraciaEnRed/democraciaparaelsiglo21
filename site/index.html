@@ -12,8 +12,9 @@
 
     main {
       position: relative;
-      padding: 2em 5em;
-      max-width: 680px;
+      padding: 2em;
+      margin: 0 auto;
+      max-width: 690px;
     }
 
     @media all and (max-width: 700px) {
@@ -28,10 +29,12 @@
     p {
       font-family: 'Open Sans', sans-serif;
       line-height: 1.8;
+      text-align: justify;
     }
 
     .libro {
       display: block;
+      margin: 0 auto;
       max-width: 100%;
       width: 480px;
       border: 1px solid #333;
@@ -63,17 +66,21 @@
       background-color: #55acee;
       box-shadow: 0px 5px 0px 0px #3C93D5;
     }
+
+    .downloads {
+      text-align: center;
+    }
   </style>
 </head>
 <body>
   <main>
     <h1>¿Qué democracia para el siglo XXI?</h1>
-    <p>La convergencia entre Asuntos del Sur y Democracia en Red, con otros pares y organizaciones de América Latina, despliega, de forma colectiva, la pregunta más importante que puede y debe hacerse esta generación: ¿qué democracia queremos y podemos construir?</p>
+    <p class="hyphenate">La convergencia entre Asuntos del Sur y Democracia en Red, con otros pares y organizaciones de América Latina, despliega, de forma colectiva, la pregunta más importante que puede y debe hacerse esta generación: ¿qué democracia queremos y podemos construir?</p>
     <img class="libro" src="img/libro.jpg">
-    <p>La democracia es un espacio vivo, en constante transformación, por lo tanto, no estamos condenados a las instituciones que heredamos. Éstas son un bien colectivo que podemos y debemos rediseñar para el contexto social y tecnológico que atravesamos en la actualidad.</p>
-    <p>No es un proceso fácil, ni un proceso que pueda tomarse a la ligera, pero las innovaciones en la tecnología de organización y comunicación hacen necesario debatir qué democracia queremos para el siglo XXI y qué características deberá tener la ciudadanía que la  protagonice. Estamos ante el surgimiento de una ciudadanía con nuevas capacidades y, como resultado, podemos discutir cómo es, cómo queremos que sea, en el siglo XXI la democracia.</p>
-    <p>Esta colección de artículos es fruto de la reflexión de hacedores, de activistas sociales de todas la región que se animan a poner por escrito sus aprendizajes y sus inquietudes. No pretenden proveer respuestas únicas, sino presentar una mirada hacia el futuro.</p>
-    <p>La convergencia entre Asuntos del Sur y Democracia en Red, con otros pares y organizaciones de América Latina, despliega, de forma colectiva, la pregunta más importante que puede y debe hacerse esta generación: ¿qué queremos y podemos construir como democracia?</p>
+    <p class="hyphenate">La democracia es un espacio vivo, en constante transformación, por lo tanto, no estamos condenados a las instituciones que heredamos. Éstas son un bien colectivo que podemos y debemos rediseñar para el contexto social y tecnológico que atravesamos en la actualidad.</p>
+    <p class="hyphenate">No es un proceso fácil, ni un proceso que pueda tomarse a la ligera, pero las innovaciones en la tecnología de organización y comunicación hacen necesario debatir qué democracia queremos para el siglo XXI y qué características deberá tener la ciudadanía que la  protagonice. Estamos ante el surgimiento de una ciudadanía con nuevas capacidades y, como resultado, podemos discutir cómo es, cómo queremos que sea, en el siglo XXI la democracia.</p>
+    <p class="hyphenate">Esta colección de artículos es fruto de la reflexión de hacedores, de activistas sociales de todas la región que se animan a poner por escrito sus aprendizajes y sus inquietudes. No pretenden proveer respuestas únicas, sino presentar una mirada hacia el futuro.</p>
+    <p class="hyphenate">La convergencia entre Asuntos del Sur y Democracia en Red, con otros pares y organizaciones de América Latina, despliega, de forma colectiva, la pregunta más importante que puede y debe hacerse esta generación: ¿qué queremos y podemos construir como democracia?</p>
 
     <p class="details">
       Coordinadores <br>
@@ -86,8 +93,12 @@
       Con el apoyo de Fundación Avina y Open Society Foundation.<br>
     </p>
 
-    <a class="btn blue" href="https://github.com/DemocraciaEnRed/democraciaparaelsiglo21/raw/master/book/que-democracia-para-el-siglo-xxi.pdf">Descargar .pdf</a>
+    <div class="downloads">
+      <a class="btn blue" href="https://github.com/DemocraciaEnRed/democraciaparaelsiglo21/raw/master/book/que-democracia-para-el-siglo-xxi.pdf">Descargar .pdf</a>
+    </div>
   </main>
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Martel:200,400">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/g/hyphenator@4.3.0(hyphenator.min.js+patterns/es.js)"></script>
+  <script type="text/javascript">Hyphenator.run();</script>
 </body>
 </html>
