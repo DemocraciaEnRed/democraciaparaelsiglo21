@@ -103,7 +103,7 @@
     <p class="hyphenate">Esta colección de artículos es fruto de la reflexión de hacedores, de activistas sociales de todas la región, que se animan a poner por escrito sus aprendizajes y sus inquietudes. No pretenden proveer respuestas únicas, sino presentar miradas hacia el futuro.</p>
 
     <div class="downloads">
-      <a class="btn default" href="http://www.democraciaparaelsiglo21.org/book/que-democracia-para-el-siglo-xxi.pdf" target="_blank">Descargar .pdf</a>
+      <a id="download-book" class="btn default" href="http://www.democraciaparaelsiglo21.org/book/que-democracia-para-el-siglo-xxi.pdf" target="_blank">Descargar .pdf</a>
     </div>
   </main>
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Martel:200,400">
@@ -117,6 +117,20 @@
 
     ga('create', 'UA-68966439-1', 'auto');
     ga('send', 'pageview');
+  </script>
+
+  <script>
+  ;(function(){
+    var link = document.getElementById('download-book');
+    addListener(link, 'click', function() {
+      ga('send', 'event', 'button', 'click', 'book-download');
+    });
+
+    function addListener(element, type, callback) {
+     if (element.addEventListener) element.addEventListener(type, callback);
+     else if (element.attachEvent) element.attachEvent('on' + type, callback);
+    }
+  })()
   </script>
 </body>
 </html>
