@@ -32,17 +32,25 @@
       text-align: justify;
     }
 
-    .libro {
-      display: block;
-      margin: 0 auto;
+    .book-cover,
+    .details {
+      display: inline-block;
+      position: relative;
+      width: 300px;
       max-width: 100%;
-      width: 480px;
+    }
+
+    .book-cover {
       border: 1px solid #333;
     }
 
     .details {
+      padding: 1em 0 0 1em;
+      margin: 0;
       font-size: .8em;
       color: #555;
+      text-align: left;
+      vertical-align: baseline;
     }
 
     .btn {
@@ -62,9 +70,9 @@
       box-shadow: 0px 1px 0px 0px;
     }
 
-    .blue {
-      background-color: #55acee;
-      box-shadow: 0px 5px 0px 0px #3C93D5;
+    .default {
+      background-color: #E34D9F;
+      box-shadow: 0px 5px 0px 0px #A9558B;
     }
 
     .downloads {
@@ -75,26 +83,27 @@
 <body>
   <main>
     <h1>¿Qué democracia para el siglo XXI?</h1>
-    <p class="hyphenate">La convergencia entre Asuntos del Sur y Democracia en Red, con otros pares y organizaciones de América Latina, despliega, de forma colectiva, la pregunta más importante que puede y debe hacerse esta generación: ¿qué democracia queremos y podemos construir?</p>
-    <img class="libro" src="img/libro.jpg">
-    <p class="hyphenate">La democracia es un espacio vivo, en constante transformación, por lo tanto, no estamos condenados a las instituciones que heredamos. Éstas son un bien colectivo que podemos y debemos rediseñar para el contexto social y tecnológico que atravesamos en la actualidad.</p>
-    <p class="hyphenate">No es un proceso fácil, ni un proceso que pueda tomarse a la ligera, pero las innovaciones en la tecnología de organización y comunicación hacen necesario debatir qué democracia queremos para el siglo XXI y qué características deberá tener la ciudadanía que la  protagonice. Estamos ante el surgimiento de una ciudadanía con nuevas capacidades y, como resultado, podemos discutir cómo es, cómo queremos que sea, en el siglo XXI la democracia.</p>
-    <p class="hyphenate">Esta colección de artículos es fruto de la reflexión de hacedores, de activistas sociales de todas la región que se animan a poner por escrito sus aprendizajes y sus inquietudes. No pretenden proveer respuestas únicas, sino presentar una mirada hacia el futuro.</p>
-    <p class="hyphenate">La convergencia entre Asuntos del Sur y Democracia en Red, con otros pares y organizaciones de América Latina, despliega, de forma colectiva, la pregunta más importante que puede y debe hacerse esta generación: ¿qué queremos y podemos construir como democracia?</p>
-
-    <p class="details">
-      Coordinadores <br>
-      <strong>Matías Bianchi y Pía Mancini</strong><br>
-      ISBN<br>
-      <strong>978-987-45915-0-0</strong><br>
-      <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br>
-      Asuntos del Sur <a href="http://www.asuntosdelsur.org">www.asuntosdelsur.org</a><br>
-      Democracia en Red <a href="http://democraciaenred.org">www.democraciaenred.org</a><br>
-      Con el apoyo de Fundación Avina y Open Society Foundation.<br>
-    </p>
+    <p class="hyphenate">La democracia es un espacio vivo, en constante transformación: no estamos condenados a las instituciones que heredamos sino que podemos cuestionarlas, transformarlas.</p>
+    <p class="hyphenate">En este libro, activistas y organizaciones de toda América Latina se preguntan: ¿qué democracia queremos y podemos construir en el contexto social y tecnológico que estamos atravesando?</p>
+    <div class="cover">
+      <img class="book-cover" src="img/libro.jpg">
+      <p class="details">
+        <strong>Coordinadores</strong><br>
+        Matías Bianchi y Pía Mancini<br>
+        Publicación gratuita, bajo licencia Creative Commons.<br>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br>
+        ISBN: <strong>978-987-45915-0-0</strong><br>
+        <strong>Realizado por</strong><br>
+        Asuntos del Sur <a href="http://www.asuntosdelsur.org">www.asuntosdelsur.org</a><br>
+        Democracia en Red <a href="http://democraciaenred.org">www.democraciaenred.org</a><br>
+        Con el apoyo de <strong>Fundación Avina</strong> y <strong>Open Society Foundation</strong>.<br>
+      </p>
+    </div>
+    <p class="hyphenate">Las innovaciones en las tecnologías de organización y comunicación hacen necesario debatir qué prácticas sociales y políticas queremos para el siglo XXI y qué características tendrá la ciudadanía que las protagonice. No es un proceso fácil ni que pueda tomarse a la ligera. Estamos ante el surgimiento de una ciudadanía con nuevas capacidades y, como resultado, podremos discutir cómo es y cómo queremos que sea en el siglo XXI, la democracia.</p>
+    <p class="hyphenate">Esta colección de artículos es fruto de la reflexión de hacedores, de activistas sociales de todas la región, que se animan a poner por escrito sus aprendizajes y sus inquietudes. No pretenden proveer respuestas únicas, sino presentar miradas hacia el futuro.</p>
 
     <div class="downloads">
-      <a class="btn blue" href="https://github.com/DemocraciaEnRed/democraciaparaelsiglo21/raw/master/book/que-democracia-para-el-siglo-xxi.pdf">Descargar .pdf</a>
+      <a class="btn default" href="https://github.com/DemocraciaEnRed/democraciaparaelsiglo21/raw/master/book/que-democracia-para-el-siglo-xxi.pdf">Descargar .pdf</a>
     </div>
   </main>
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Martel:200,400">
